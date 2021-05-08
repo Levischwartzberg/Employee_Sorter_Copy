@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import API from "../utils/API";
 import EmployeeInfo from "../components/EmployeeInfo";
 import EmployeeList from "../components/EmployeeList"
+import SearchForm from "../components/SearchForm";
 import Alert from "../components/Alert";
 
 // class Discover extends Component {
@@ -11,13 +12,20 @@ function Employees() {
   //   employeeList: []
   // }
   const [employeeList, setEmployeeList ] = useState([]);
+  const [ filteredList, setFilteredList ] = useState([]);
+  const [search, setSearch] = useState("Name");
 
   useEffect( async () => {
     const result = await API.getRandomUsers();
     const finalList = await result.data.results
     setEmployeeList(finalList);
+    setFilteredList(finalList);
     // setRenderReady(true)
   }, [])
+
+  const handleInputChange = event => {
+    setSearch(event.target.value);
+  };
 
   // componentDidMount() {
   //   this.loadNextUser();
@@ -36,7 +44,11 @@ function Employees() {
         <h3 className="text-center">
           Adjust search criteria to filter employees and click on categories to reverse display order
         </h3>
-        <EmployeeList list={employeeList} />
+        <SearchForm
+          handleInputChange={handleInputChange}
+          results={search}
+        />
+        <EmployeeList list={filteredList} />
       </div>
     );
   // }

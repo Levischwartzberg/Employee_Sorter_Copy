@@ -18,7 +18,7 @@ const EmployeeList = (props) => {
         </thead>
         <tbody>
           { props.list.map( item => (
-            <tr key={item.id.value}>
+            <tr key={item.login.username}>
               <td> <img src={item.picture.large} /> </td>
               <td>
                 <Link to={`/employee/${item.id.value}`}>
