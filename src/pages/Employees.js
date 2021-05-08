@@ -28,7 +28,7 @@ function Employees() {
     const search = event.target.value.toLowerCase();
     const filtered = employeeList.filter(
       employee => {
-        return employee.name.first.toLowerCase().includes(search) || employee.name.last.includes(search);
+        return employee.name.first.toLowerCase().includes(search) || employee.name.last.toLowerCase().includes(search);
       }
     )
     console.log(filtered);
