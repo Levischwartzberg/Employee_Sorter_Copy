@@ -25,6 +25,14 @@ function Employees() {
 
   const handleInputChange = event => {
     setSearch(event.target.value);
+    const search = event.target.value.toLowerCase();
+    const filtered = employeeList.filter(
+      employee => {
+        return employee.name.first.toLowerCase().includes(search) || employee.name.last.includes(search);
+      }
+    )
+    console.log(filtered);
+    setFilteredList(filtered);
   };
 
   // componentDidMount() {
