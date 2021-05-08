@@ -6,7 +6,7 @@ import EmployeeList from "../components/EmployeeList"
 import Alert from "../components/Alert";
 
 // class Discover extends Component {
-function Discover() {
+function Employees() {
   // state = {
   //   employeeList: []
   // }
@@ -42,4 +42,4 @@ function Discover() {
   // }
 }
 
-export default Discover;
+export default Employees;
