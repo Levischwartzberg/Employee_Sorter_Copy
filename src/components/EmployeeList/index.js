@@ -1,17 +1,28 @@
 import React from "react"
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
+import CardBtn from "../CardBtn"
 
 const EmployeeList = (props) => {
-  console.log(props)
+  // console.log(props)
   return (
     <>
       <table className="table">
         <thead>
           <tr>
             <th>Image</th>
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>First Name 
+              <CardBtn
+                onClick={props.handleBtnClick}
+                data-value="pass"
+              />
+            </th>
+            <th>Last Name
+              <CardBtn
+                onClick={props.handleBtnClick}
+                data-value="pass"
+              />
+            </th>
             <th>Email</th>
             <th>Phone</th>
           </tr>

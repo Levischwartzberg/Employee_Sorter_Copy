@@ -1,10 +1,10 @@
 // import React, { Component } from "react";
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
-import EmployeeInfo from "../components/EmployeeInfo";
+// import EmployeeInfo from "../components/EmployeeInfo";
 import EmployeeList from "../components/EmployeeList"
 import SearchForm from "../components/SearchForm";
-import Alert from "../components/Alert";
+// import Alert from "../components/Alert";
 
 // class Discover extends Component {
 function Employees() {
@@ -31,7 +31,7 @@ function Employees() {
         return employee.name.first.toLowerCase().includes(search) || employee.name.last.toLowerCase().includes(search);
       }
     )
-    console.log(filtered);
+    // console.log(filtered);
     setFilteredList(filtered);
   };
 
