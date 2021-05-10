@@ -13,6 +13,7 @@ function Employees() {
   // }
   const [employeeList, setEmployeeList ] = useState([]);
   const [ filteredList, setFilteredList ] = useState([]);
+  const [ aToZ, setAtoZ ] = useState(true);
   const [search, setSearch] = useState("Name");
 
   useEffect( async () => {
@@ -39,22 +40,48 @@ function Employees() {
     // console.log(event.target.parentNode.textContent);
     let collumn = event.target.parentNode.textContent;
     if (collumn === "First Name") {
-      console.log(employeeList);
-      const filtered = employeeList.sort(function(a, b){
-        if(a.name.first < b.name.first) { return -1; }
-        if(a.name.first > b.name.first) { return 1; }
-        return 0;
-      })
-      console.log(filtered);
-      setFilteredList(filtered);
+      if (aToZ === false) {
+        setAtoZ(true);
+        const filtered = [...employeeList].sort(function(a, b){
+          if(a.name.first < b.name.first) { return -1; }
+          if(a.name.first > b.name.first) { return 1; }
+          return 0;
+        })
+        console.log(filtered);
+        setFilteredList(filtered);
+      }
+      else {
+        setAtoZ(false);
+        const filtered = [...employeeList].sort(function(b, a){
+          if(a.name.first < b.name.first) { return -1; }
+          if(a.name.first > b.name.first) { return 1; }
+          return 0;
+        })
+        console.log(filtered);
+        setFilteredList(filtered);
+      }
     }
     else if (collumn === "Last Name") {
-      const filtered = employeeList.sort(function(a, b){
-        if(a.name.last < b.name.last) { return -1; }
-        if(a.name.last > b.name.last) { return 1; }
-        return 0;
-      })
-      setFilteredList(filtered);
+      if (aToZ === false) {
+        setAtoZ(true);
+        const filtered = [...employeeList].sort(function(a, b){
+          if(a.name.last < b.name.last) { return -1; }
+          if(a.name.last > b.name.last) { return 1; }
+          return 0;
+        })
+        console.log(filtered);
+        setFilteredList(filtered);
+      }
+      else {
+        setAtoZ(false);
+        const filtered = [...employeeList].sort(function(b, a){
+          if(a.name.last < b.name.last) { return -1; }
+          if(a.name.last > b.name.last) { return 1; }
+          return 0;
+        })
+        console.log(filtered);
+        setFilteredList(filtered);
+      }
     }
   }
 
