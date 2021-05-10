@@ -13,13 +13,13 @@ const EmployeeList = (props) => {
             <th>Image</th>
             <th>First Name 
               <CardBtn
-                onClick={props.handleBtnClick}
+                handleBtnClick={props.handleBtnClick}
                 data-value="pass"
               />
             </th>
             <th>Last Name
               <CardBtn
-                onClick={props.handleBtnClick}
+                handleBtnClick={props.handleBtnClick}
                 data-value="pass"
               />
             </th>
@@ -30,7 +30,7 @@ const EmployeeList = (props) => {
         <tbody>
           { props.list.map( item => (
             <tr key={item.login.username}>
-              <td> <img src={item.picture.large} /> </td>
+              <td> <img src={item.picture.large} alt="random employee"/> </td>
               <td>
                 <Link to={`/employee/${item.id.value}`}>
                   {item.name.first}
@@ -57,7 +57,7 @@ const EmployeeList = (props) => {
 }
 
 EmployeeList.defaultProps = {
-  list: []
+  list: [],
 }
 
 EmployeeList.propTypes = {

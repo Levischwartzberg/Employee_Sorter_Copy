@@ -35,6 +35,29 @@ function Employees() {
     setFilteredList(filtered);
   };
 
+  const handleBtnClick = event => {
+    // console.log(event.target.parentNode.textContent);
+    let collumn = event.target.parentNode.textContent;
+    if (collumn === "First Name") {
+      console.log(employeeList);
+      const filtered = employeeList.sort(function(a, b){
+        if(a.name.first < b.name.first) { return -1; }
+        if(a.name.first > b.name.first) { return 1; }
+        return 0;
+      })
+      console.log(filtered);
+      setFilteredList(filtered);
+    }
+    else if (collumn === "Last Name") {
+      const filtered = employeeList.sort(function(a, b){
+        if(a.name.last < b.name.last) { return -1; }
+        if(a.name.last > b.name.last) { return 1; }
+        return 0;
+      })
+      setFilteredList(filtered);
+    }
+  }
+
   // componentDidMount() {
   //   this.loadNextUser();
   // }
@@ -56,7 +79,7 @@ function Employees() {
           handleInputChange={handleInputChange}
           results={search}
         />
-        <EmployeeList list={filteredList} />
+        <EmployeeList list={filteredList} handleBtnClick={handleBtnClick}/>
       </div>
     );
   // }
