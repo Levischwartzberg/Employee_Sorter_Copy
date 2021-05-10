@@ -18,6 +18,7 @@ https://choosealicense.com/licenses/mit/
 Create a new react project and copy the src folder into it.
 ## Usage
 A link to the projeect on github can be found here. 
+https://levischwartzberg.github.io/Employee_Sorter_Copy/
 https://github.com/Levischwartzberg/Employee_Sorter/deployments/activity_log?environment=github-pages
 ![Alt text](./images/preview1.jpg?raw=true "Sample employee table")
 ![Alt text](./images/preview2.jpg?raw=true "A search of emm narrows down to just two employees")
