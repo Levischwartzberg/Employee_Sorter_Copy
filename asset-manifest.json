@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Employee_Sorter/static/css/main.53493161.chunk.css",
-    "main.js": "/Employee_Sorter/static/js/main.b09da056.chunk.js",
-    "main.js.map": "/Employee_Sorter/static/js/main.b09da056.chunk.js.map",
-    "runtime-main.js": "/Employee_Sorter/static/js/runtime-main.5e47a46e.js",
-    "runtime-main.js.map": "/Employee_Sorter/static/js/runtime-main.5e47a46e.js.map",
-    "static/css/2.800be05e.chunk.css": "/Employee_Sorter/static/css/2.800be05e.chunk.css",
-    "static/js/2.5675ca63.chunk.js": "/Employee_Sorter/static/js/2.5675ca63.chunk.js",
-    "static/js/2.5675ca63.chunk.js.map": "/Employee_Sorter/static/js/2.5675ca63.chunk.js.map",
-    "index.html": "/Employee_Sorter/index.html",
-    "static/css/2.800be05e.chunk.css.map": "/Employee_Sorter/static/css/2.800be05e.chunk.css.map",
-    "static/css/main.53493161.chunk.css.map": "/Employee_Sorter/static/css/main.53493161.chunk.css.map",
-    "static/js/2.5675ca63.chunk.js.LICENSE.txt": "/Employee_Sorter/static/js/2.5675ca63.chunk.js.LICENSE.txt"
+    "main.css": "/Employee_Sorter_Copy/static/css/main.53493161.chunk.css",
+    "main.js": "/Employee_Sorter_Copy/static/js/main.b09da056.chunk.js",
+    "main.js.map": "/Employee_Sorter_Copy/static/js/main.b09da056.chunk.js.map",
+    "runtime-main.js": "/Employee_Sorter_Copy/static/js/runtime-main.2950fd9d.js",
+    "runtime-main.js.map": "/Employee_Sorter_Copy/static/js/runtime-main.2950fd9d.js.map",
+    "static/css/2.800be05e.chunk.css": "/Employee_Sorter_Copy/static/css/2.800be05e.chunk.css",
+    "static/js/2.5675ca63.chunk.js": "/Employee_Sorter_Copy/static/js/2.5675ca63.chunk.js",
+    "static/js/2.5675ca63.chunk.js.map": "/Employee_Sorter_Copy/static/js/2.5675ca63.chunk.js.map",
+    "index.html": "/Employee_Sorter_Copy/index.html",
+    "static/css/2.800be05e.chunk.css.map": "/Employee_Sorter_Copy/static/css/2.800be05e.chunk.css.map",
+    "static/css/main.53493161.chunk.css.map": "/Employee_Sorter_Copy/static/css/main.53493161.chunk.css.map",
+    "static/js/2.5675ca63.chunk.js.LICENSE.txt": "/Employee_Sorter_Copy/static/js/2.5675ca63.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5e47a46e.js",
+    "static/js/runtime-main.2950fd9d.js",
     "static/css/2.800be05e.chunk.css",
     "static/js/2.5675ca63.chunk.js",
     "static/css/main.53493161.chunk.css",
